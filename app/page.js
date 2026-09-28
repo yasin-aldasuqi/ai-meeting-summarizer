@@ -27,8 +27,7 @@ export default function Home() {
 
     try {
       const genAI = new GoogleGenerativeAI(apiKey);
-      const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
-
+      const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
       const prompt = `You are an expert meeting analyst. Analyze the following meeting notes and provide a structured summary.
 
 Return your response in this exact format:
